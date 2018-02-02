@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.fortuneball.MainActivity">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fortune_description"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColorHighlight="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fortunateImage"
+        android:src="@drawable/img_crystal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/fortuneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fortunateImage"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/fortuneButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fortuneText"
+        android:text="What's my fortune?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+</RelativeLayout>
